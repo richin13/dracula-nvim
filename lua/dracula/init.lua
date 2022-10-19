@@ -12,7 +12,7 @@ local tbl_deep_extend = vim.tbl_deep_extend
 ---@field colors Palette
 ---@field overrides table<string, Highlight>
 local DEFAULT_CONFIG = {
-   italic_comment = false,
+   italic_comment = true,
    transparent_bg = false,
    show_end_of_buffer = false,
    lualine_bg_color = nil,
