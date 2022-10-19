@@ -71,7 +71,7 @@ local function setup(configs)
       Underlined = { fg = colors.cyan, underline = true, },
 
       Cursor = { reverse = true, },
-      CursorLineNr = { fg = colors.fg, bold = true, },
+      CursorLineNr = { fg = colors.green, bold = true, },
 
       SignColumn = { bg = colors.bg, },
 
@@ -93,11 +93,11 @@ local function setup(configs)
 
       ErrorMsg = { fg = colors.bright_red, },
       VertSplit = { fg = colors.black, },
-      Folded = { fg = colors.comment, },
+      Folded = { fg = colors.comment, bg = colors.selection, },
       FoldColumn = {},
       Search = { fg = colors.black, bg = colors.orange, },
       IncSearch = { fg = colors.orange, bg = colors.comment, },
-      LineNr = { fg = colors.comment, },
+      LineNr = { fg = colors.selection, bg = colors.bg, },
       MatchParen = { fg = colors.fg, underline = true, },
       NonText = { fg = colors.nontext, },
       Pmenu = { fg = colors.white, bg = colors.menu, },
@@ -127,14 +127,16 @@ local function setup(configs)
 
       -- TreeSitter
       ['@error'] = { fg = colors.bright_red, },
+      ['@warning'] = { fg = colors.bg, bg = colors.orange, },
+      ['@danger'] = { fg = colors.bg, bg = colors.bright_red, },
       ['@punctuation.delimiter'] = { fg = colors.fg, },
       ['@punctuation.bracket'] = { fg = colors.fg, },
       ['@punctuation.special'] = { fg = colors.fg, },
 
-      ['@constant'] = { fg = colors.purple, },
+      ['@constant'] = { fg = colors.orange, italic = true, },
       ['@constant.builtin'] = { fg = colors.purple, },
+      ['@constant.macro'] = { fg = colors.pink, },
 
-      ['@constant.macro'] = { fg = colors.cyan, },
       ['@string.regex'] = { fg = colors.red, },
       ['@string'] = { fg = colors.yellow, },
       ['@string.escape'] = { fg = colors.cyan, },
@@ -149,7 +151,7 @@ local function setup(configs)
       ['@function.builtin'] = { fg = colors.cyan, },
       ['@function'] = { fg = colors.green, },
       ['@function.macro'] = { fg = colors.green, },
-      ['@paramter'] = { fg = colors.orange, },
+      ['@parameter'] = { fg = colors.orange, },
       ['@parameter.reference'] = { fg = colors.orange, },
       ['@method'] = { fg = colors.green, },
       ['@field'] = { fg = colors.orange, },
@@ -161,7 +163,7 @@ local function setup(configs)
       ['@label'] = { fg = colors.cyan, },
 
       ['@keyword'] = { fg = colors.pink, },
-      ['@keyword.function'] = { fg = colors.cyan, },
+      ['@keyword.function'] = { fg = colors.pink, },
       ['@keyword.operator'] = { fg = colors.pink, },
       ['@operator'] = { fg = colors.pink, },
       ['@exception'] = { fg = colors.purple, },
@@ -171,7 +173,7 @@ local function setup(configs)
       ['@include'] = { fg = colors.pink, },
 
       ['@variable'] = { fg = colors.fg, },
-      ['@variable.builtin'] = { fg = colors.purple, },
+      ['@variable.builtin'] = { fg = colors.purple, italic = true, },
 
       ['@text'] = { fg = colors.orange, },
       ['@text.strong'] = { fg = colors.orange, bold = true, }, -- bold
@@ -260,7 +262,7 @@ local function setup(configs)
       NvimTreeNormal = { fg = colors.fg, bg = colors.menu, },
       NvimTreeVertSplit = { fg = colors.bg, bg = colors.bg, },
       NvimTreeRootFolder = { fg = colors.fg, bold = true, },
-      NvimTreeGitDirty = { fg = colors.yellow, },
+      NvimTreeGitDirty = { fg = colors.bright_cyan, },
       NvimTreeGitNew = { fg = colors.bright_green, },
       NvimTreeImageFile = { fg = colors.pink, },
       NvimTreeFolderIcon = { fg = colors.purple, },
@@ -328,8 +330,21 @@ local function setup(configs)
       LspSagaDocTruncateLine = { fg = colors.comment, },
       LspSagaLspFinderBorder = { fg = colors.comment, },
 
+      -- Coc
+      CocErrorSign = { fg = colors.red, },
+      CocWarningSign = { fg = colors.orange, },
+      CocInfoSign = { fg = colors.cyan, },
+      CocHintSign = { fg = colors.yellow, },
+      CocErrorHighlight = { undercurl = true, sp = colors.red, },
+      CocWarningHighlight = { undercurl = true, sp = colors.orange, },
+      CocInfoHighlight = { undercurl = true, sp = colors.cyan, },
+      CocHintHighlight = { undercurl = true, sp = colors.yellow, },
+      CocHighlightText = { underline = true, },
+      CocFadeOut = { undercurl = true, sp = colors.yellow, },
+
+
       -- IndentBlankLine
-      IndentBlanklineContextChar = { fg = colors.bright_red, nocombine = true, },
+      IndentBlanklineContextChar = { fg = colors.cyan, nocombine = true, },
 
       -- Nvim compe
       CmpItemAbbrDeprecated = { fg = colors.white, bg = colors.menu, },
