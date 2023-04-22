@@ -186,6 +186,21 @@ local function setup(configs)
       ['@tag'] = { fg = colors.cyan, },
       ['@tag.delimiter'] = { fg = colors.white, },
 
+      ['@lsp.type.namespace'] = { fg = colors.orange, },
+      ['@lsp.type.type'] = { fg = colors.bright_cyan, },
+      ['@lsp.type.class'] = { fg = colors.bright_cyan, },
+      ['@lsp.type.enum'] = { fg = colors.bright_cyan, },
+      ['@lsp.type.interface'] = { fg = colors.bright_cyan, },
+      ['@lsp.type.struct'] = { fg = colors.purple, },
+      ['@lsp.type.parameter'] = { fg = colors.orange, },
+      ['@lsp.type.variable'] = { fg = colors.fg, },
+      ['@lsp.type.property'] = { fg = colors.fg, },
+      ['@lsp.type.enumMember'] = { fg = colors.orange, italic = true, },
+      ['@lsp.type.function'] = { fg = colors.green, },
+      ['@lsp.type.method'] = { fg = colors.green, },
+      ['@lsp.type.macro'] = { fg = colors.pink, },
+      ['@lsp.type.decorator'] = { fg = colors.green, },
+
       -- HTML
       htmlArg = { fg = colors.yellow, },
       htmlBold = { fg = colors.yellow, bold = true, },
