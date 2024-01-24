@@ -321,22 +321,6 @@ local function setup(configs)
       LspReferenceRead = { fg = colors.orange, },
       LspReferenceWrite = { fg = colors.orange, },
 
-      --LSP Saga
-      LspFloatWinNormal = { fg = colors.fg, },
-      LspFloatWinBorder = { fg = colors.comment, },
-      LspSagaHoverBorder = { fg = colors.comment, },
-      LspSagaSignatureHelpBorder = { fg = colors.comment, },
-      LspSagaCodeActionBorder = { fg = colors.comment, },
-      LspSagaDefPreviewBorder = { fg = colors.comment, },
-      LspLinesDiagBorder = { fg = colors.comment, },
-      LspSagaRenameBorder = { fg = colors.comment, },
-      LspSagaBorderTitle = { fg = colors.menu, },
-      LSPSagaDiagnosticTruncateLine = { fg = colors.comment, },
-      LspSagaDiagnosticBorder = { fg = colors.comment, },
-      LspSagaShTruncateLine = { fg = colors.comment, },
-      LspSagaDocTruncateLine = { fg = colors.comment, },
-      LspSagaLspFinderBorder = { fg = colors.comment, },
-
       -- Coc
       CocErrorSign = { fg = colors.red, },
       CocWarningSign = { fg = colors.orange, },
@@ -357,11 +341,6 @@ local function setup(configs)
       -- Nvim compe
       CmpItemAbbrDeprecated = { fg = colors.white, bg = colors.menu, },
       CmpItemAbbrMatch = { fg = colors.cyan, bg = colors.menu, },
-
-      --barbar
-      BufferCurrentTarget = { fg = colors.red, },
-      BufferVisibleTarget = { fg = colors.red, },
-      BufferInactiveTarget = { fg = colors.red, },
 
       -- Compe
       CompeDocumentation = { link = "Pmenu" },
@@ -427,7 +406,6 @@ local function setup(configs)
       NavicText = { fg = 'gray' },
       NavicSeparator = { fg = 'gray' },
 
-
       -- TS rainbow colors
       rainbowcol1 = { fg = colors.red, },
       rainbowcol2 = { fg = colors.green, },
@@ -436,6 +414,10 @@ local function setup(configs)
       rainbowcol5 = { fg = colors.pink, },
       rainbowcol6 = { fg = colors.cyan, },
       rainbowcol7 = { fg = colors.white, },
+
+      -- Vim Packager
+      packagerCheck = { fg = colors.green, },
+      packagerX = { fg = colors.red, },
    }
 end
 
