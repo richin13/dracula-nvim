@@ -21,7 +21,6 @@
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [BufferLine](https://github.com/akinsho/nvim-bufferline.lua)
 - [Git Signs](https://github.com/lewis6991/gitsigns.nvim)
-- [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [LSPSaga](https://github.com/glepnir/lspsaga.nvim)
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
@@ -50,20 +49,6 @@ vim.cmd[[colorscheme dracula]]
 ```vim
 " Vim-Script:
 colorscheme dracula
-```
-
-If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can also enable the provided theme:
-
-> Make sure to set theme as 'dracula-nvim' as dracula already exists in lualine built in themes
-
-```lua
-require('lualine').setup {
-  options = {
-    -- ...
-    theme = 'dracula-nvim'
-    -- ...
-  }
-}
 ```
 
 ## 🔧 Configuration
@@ -104,8 +89,6 @@ dracula.setup({
   show_end_of_buffer = true, -- default false
   -- use transparent background
   transparent_bg = true, -- default false
-  -- set custom lualine background color
-  lualine_bg_color = "#44475a", -- default nil
   -- set italic comment
   italic_comment = true, -- default false
   -- overrides the default highlights see `:h synIDattr`
@@ -153,8 +136,6 @@ dracula.setup({
   show_end_of_buffer = true, -- default false
   -- use transparent background
   transparent_bg = true, -- default false
-  -- set custom lualine background color
-  lualine_bg_color = "#44475a", -- default nil
   -- set italic comment
   italic_comment = true, -- default false
   -- overrides the default highlights see `:h synIDattr`
