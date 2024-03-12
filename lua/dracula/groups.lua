@@ -348,6 +348,7 @@ local function setup(configs)
       CocHintHighlight = { undercurl = true, sp = colors.yellow, },
       CocHighlightText = { underline = true, },
       CocFadeOut = { undercurl = true, sp = colors.yellow, },
+      CocInlayHint = { fg = colors.comment, },
 
 
       -- IndentBlankLine
