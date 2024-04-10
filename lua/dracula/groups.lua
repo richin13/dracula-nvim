@@ -418,6 +418,25 @@ local function setup(configs)
       -- Vim Packager
       packagerCheck = { fg = colors.green, },
       packagerX = { fg = colors.red, },
+
+      -- mini.nvim
+      MiniStatuslineModeNormal = { bg = colors.cyan, fg = colors.bg, },
+      MiniStatuslineModeInsert = { bg = colors.green, fg = colors.bg, },
+      MiniStatuslineModeVisual = { bg = colors.purple, fg = colors.bg, },
+      MiniStatuslineModeReplace = { bg = colors.red, fg = colors.bg, },
+      MiniStatuslineModeCommand = { bg = colors.orange, fg = colors.bg, },
+      MiniStatuslineDevinfo = { bg = colors.selection, fg = colors.white, },
+      MiniStatuslineFilename = { bg = colors.bg, fg = colors.white, },
+      MiniStatuslineFileinfo = { bg = colors.selection, fg = colors.white, },
+      MiniStatuslineDiagnosticsClean = { bg = colors.selection, fg = colors.green, },
+      MiniStatuslineDiagnosticsError = {bg = colors.selection, fg = colors.red, },
+      MiniStatuslineDiagnosticsWarning = {bg = colors.selection, fg = colors.orange, },
+      MiniStatuslineDiagnosticsInfo = {bg = colors.selection, fg = colors.cyan, },
+      MiniStatuslineDiagnosticsHint = {bg = colors.selection, fg = colors.cyan, },
+      MiniTablineCurrent = { fg = colors.white, bold = true},
+      MiniTablineModifiedCurrent = { fg = colors.white, bold = true, italic = true, },
+      MiniTablineHidden = { bg = colors.selection, fg = colors.white, bold = false},
+      MiniTablineModifiedHidden = {bg = colors.selection, fg = colors.bright_cyan, italic = true},
    }
 end
 
