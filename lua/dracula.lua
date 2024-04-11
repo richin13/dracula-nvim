@@ -140,7 +140,7 @@ local function apply()
     WarningMsg = { fg = colors.yellow },
     WildMenu = { fg = colors.black, bg = colors.white },
 
-    EndOfBuffer = { bg = colors.bg },
+    EndOfBuffer = { fg = colors.bg },
 
     -- TreeSitter
     ["@annotation"] = { fg = colors.yellow },
@@ -297,7 +297,7 @@ local function apply()
     NvimTreeOpenedFolderName = { fg = colors.fg },
     NvimTreeCursorLine = { bg = colors.selection },
     NvimTreeIn = { bg = colors.selection },
-    NvimTreeEndOfBuffer = { bg = colors.bg },
+    NvimTreeEndOfBuffer = { fg = colors.bg },
 
     -- Coc
     CocErrorSign = { fg = colors.red },
