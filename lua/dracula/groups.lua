@@ -437,6 +437,9 @@ local function setup(configs)
       MiniTablineModifiedCurrent = { fg = colors.white, bold = true, italic = true, },
       MiniTablineHidden = { bg = colors.selection, fg = colors.white, bold = false},
       MiniTablineModifiedHidden = {bg = colors.selection, fg = colors.bright_cyan, italic = true},
+      MiniIndentscopeSymbol = { fg = colors.selection, },
+      MiniStatuslineDiagnosticsLoading = {bg = colors.selection, fg = colors.yellow, },
+
    }
 end
 
