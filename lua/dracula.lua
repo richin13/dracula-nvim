@@ -60,7 +60,7 @@ local function apply()
     Number = { fg = colors.orange },
     Boolean = { fg = colors.cyan },
     Float = { fg = colors.orange },
-    FloatBorder = { fg = colors.white },
+    FloatBorder = { fg = colors.cyan },
     Operator = { fg = colors.purple },
     Keyword = { fg = colors.cyan },
     Keywords = { fg = colors.cyan },
@@ -175,10 +175,10 @@ local function apply()
     ["@lsp.type.method"] = { fg = colors.green },
     ["@lsp.type.namespace"] = { fg = colors.orange },
     ["@lsp.type.parameter"] = { fg = colors.orange },
-    ["@lsp.type.property"] = { fg = colors.fg },
+    ["@lsp.type.property"] = { fg = colors.orange },
     ["@lsp.type.struct"] = { fg = colors.purple },
     ["@lsp.type.type"] = { fg = colors.bright_cyan },
-    ["@lsp.type.variable"] = { fg = colors.fg },
+    ["@lsp.type.variable"] = { italic = true },
     ["@markup.heading"] = { fg = colors.pink }, -- title
     ["@markup.italic"] = { fg = colors.yellow, italic = true }, -- italic
     ["@markup.link.url"] = { fg = colors.yellow, italic = true }, -- urls
@@ -311,6 +311,44 @@ local function apply()
     CocHighlightText = { underline = true },
     CocFadeOut = { undercurl = true, sp = colors.yellow },
     CocInlayHint = { fg = colors.comment },
+
+    -- Nvim-Cmp
+    CmpItemAbbrDeprecated = { fg = colors.comment, strikethrough = true },
+
+    -- LSP
+    DiagnosticError = { fg = colors.red },
+    DiagnosticWarn = { fg = colors.yellow },
+    DiagnosticInfo = { fg = colors.cyan },
+    DiagnosticHint = { fg = colors.cyan },
+    DiagnosticUnderlineError = { undercurl = true, sp = colors.red },
+    DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
+    DiagnosticUnderlineInfo = { undercurl = true, sp = colors.cyan },
+    DiagnosticUnderlineHint = { undercurl = true, sp = colors.cyan },
+    DiagnosticSignError = { fg = colors.red },
+    DiagnosticSignWarn = { fg = colors.yellow },
+    DiagnosticSignInfo = { fg = colors.cyan },
+    DiagnosticSignHint = { fg = colors.cyan },
+    DiagnosticFloatingError = { fg = colors.red },
+    DiagnosticFloatingWarn = { fg = colors.yellow },
+    DiagnosticFloatingInfo = { fg = colors.cyan },
+    DiagnosticFloatingHint = { fg = colors.cyan },
+    DiagnosticVirtualTextError = { fg = colors.red },
+    DiagnosticVirtualTextWarn = { fg = colors.yellow },
+    DiagnosticVirtualTextInfo = { fg = colors.cyan },
+    DiagnosticVirtualTextHint = { fg = colors.cyan },
+
+    LspDiagnosticsDefaultError = { fg = colors.red },
+    LspDiagnosticsDefaultWarning = { fg = colors.yellow },
+    LspDiagnosticsDefaultInformation = { fg = colors.cyan },
+    LspDiagnosticsDefaultHint = { fg = colors.cyan },
+    LspDiagnosticsUnderlineError = { fg = colors.red, undercurl = true },
+    LspDiagnosticsUnderlineWarning = { fg = colors.yellow, undercurl = true },
+    LspDiagnosticsUnderlineInformation = { fg = colors.cyan, undercurl = true },
+    LspDiagnosticsUnderlineHint = { fg = colors.cyan, undercurl = true },
+    LspReferenceText = { underline = true },
+    LspReferenceRead = { link = "LspReferenceText" },
+    LspReferenceWrite = { link = "LspReferenceText" },
+    LspInlayHint = { link = "Comment" },
 
     -- Vim Packager
     packagerCheck = { fg = colors.green },
