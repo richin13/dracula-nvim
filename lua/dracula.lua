@@ -197,7 +197,7 @@ local function apply()
     ["@string"] = { fg = colors.yellow },
     ["@string.escape"] = { fg = colors.cyan },
     ["@string.regexp"] = { fg = colors.yellow, italic = true },
-    ["@string.special.url"] = { fg = colors.yellow, italic = true }, -- urls
+    ["@string.special.url"] = { underline = true, italic = true }, -- urls
     ["@structure"] = { fg = colors.purple },
     ["@tag"] = { fg = colors.cyan },
     ["@tag.delimiter"] = { fg = colors.white },
