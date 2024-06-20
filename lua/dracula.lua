@@ -299,22 +299,6 @@ local function apply()
     NvimTreeIn = { bg = colors.selection },
     NvimTreeEndOfBuffer = { fg = colors.bg },
 
-    -- Coc
-    CocErrorSign = { fg = colors.red },
-    CocWarningSign = { fg = colors.orange },
-    CocInfoSign = { fg = colors.cyan },
-    CocHintSign = { fg = colors.yellow },
-    CocErrorHighlight = { undercurl = true, sp = colors.red },
-    CocWarningHighlight = { undercurl = true, sp = colors.orange },
-    CocInfoHighlight = { undercurl = true, sp = colors.cyan },
-    CocHintHighlight = { undercurl = true, sp = colors.yellow },
-    CocHighlightText = { underline = true },
-    CocFadeOut = { undercurl = true, sp = colors.yellow },
-    CocInlayHint = { fg = colors.comment },
-
-    -- Nvim-Cmp
-    CmpItemAbbrDeprecated = { fg = colors.comment, strikethrough = true },
-
     -- LSP
     DiagnosticError = { fg = colors.red },
     DiagnosticWarn = { fg = colors.yellow },
@@ -353,27 +337,6 @@ local function apply()
     -- Vim Packager
     packagerCheck = { fg = colors.green },
     packagerX = { fg = colors.red },
-
-    -- mini.nvim
-    MiniStatuslineModeNormal = { bg = colors.cyan, fg = colors.bg },
-    MiniStatuslineModeInsert = { bg = colors.green, fg = colors.bg },
-    MiniStatuslineModeVisual = { bg = colors.purple, fg = colors.bg },
-    MiniStatuslineModeReplace = { bg = colors.red, fg = colors.bg },
-    MiniStatuslineModeCommand = { bg = colors.orange, fg = colors.bg },
-    MiniStatuslineDevinfo = { bg = colors.selection, fg = colors.white },
-    MiniStatuslineFilename = { bg = colors.bg, fg = colors.white },
-    MiniStatuslineFileinfo = { bg = colors.selection, fg = colors.white },
-    MiniStatuslineDiagnosticsClean = { bg = colors.selection, fg = colors.green },
-    MiniStatuslineDiagnosticsError = { bg = colors.selection, fg = colors.red },
-    MiniStatuslineDiagnosticsWarning = { bg = colors.selection, fg = colors.orange },
-    MiniStatuslineDiagnosticsInfo = { bg = colors.selection, fg = colors.cyan },
-    MiniStatuslineDiagnosticsHint = { bg = colors.selection, fg = colors.cyan },
-    MiniTablineCurrent = { fg = colors.white, bold = true },
-    MiniTablineModifiedCurrent = { fg = colors.white, bold = true, italic = true },
-    MiniTablineHidden = { bg = colors.selection, fg = colors.white, bold = false },
-    MiniTablineModifiedHidden = { bg = colors.selection, fg = colors.bright_cyan, italic = true },
-    MiniIndentscopeSymbol = { fg = colors.selection },
-    MiniStatuslineDiagnosticsLoading = { bg = colors.selection, fg = colors.yellow },
   }
 
   -- set defined highlights
