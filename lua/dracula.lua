@@ -308,6 +308,7 @@ local function apply()
     DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
     DiagnosticUnderlineInfo = { undercurl = true, sp = colors.cyan },
     DiagnosticUnderlineHint = { undercurl = true, sp = colors.cyan },
+    DiagnosticUnnecessary = { undercurl = true, sp = colors.yellow },
     DiagnosticSignError = { fg = colors.red },
     DiagnosticSignWarn = { fg = colors.yellow },
     DiagnosticSignInfo = { fg = colors.cyan },
