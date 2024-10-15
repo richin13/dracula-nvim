@@ -117,7 +117,7 @@ local function apply()
     LineNr = { fg = colors.selection, bg = colors.bg },
     MatchParen = { fg = colors.fg, underline = true },
     NonText = { fg = colors.nontext },
-    Pmenu = { fg = colors.white, bg = colors.menu },
+    Pmenu = { fg = colors.white, bg = colors.bg },
     PmenuSel = { fg = colors.white, bg = colors.selection },
     PmenuSbar = { bg = colors.bg },
     PmenuThumb = { bg = colors.selection },
